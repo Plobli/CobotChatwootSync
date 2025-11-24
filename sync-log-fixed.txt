@@ -1,0 +1,748 @@
+[dotenv@17.2.3] injecting env (6) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 INITIAL SYNC: Alle Cobot-Mitglieder → Chatwoot
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📥 Lade alle Mitglieder von Cobot...
+
+✅ 148 Mitglieder gefunden
+
+📥 Lade alle Rechnungen von Cobot...
+
+✅ 376 Rechnungen gefunden
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Starte Synchronisation...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[1/148] Sebastian Stoll (accounts@sebastianstoll.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 107.10 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[2/148] Dennis Wöltje (beschaffung@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1278.06 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[3/148] Lukas Frank (consulting@uebersetzungen-frank.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 88.06 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[4/148] Maren Curth (marencurth@gmx.de)
+  ✅ Custom Fields: 4
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[5/148] Stefan Jäger (mail@stefan-jaeger.com)
+  ✅ Custom Fields: 4
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[6/148] Marina Brandt (marina@freshpepper.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 167.35 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[7/148] Steffi Ullrich (steffi.ullrich@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 60.69 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[8/148] Gökhan Zekeriya Witteborn-Demir (goekhan@witteborn.dev)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[9/148] Cassandra Wiek (caswie@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[10/148] Christian König (christian.koenig@mehr-demokratie.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 44.63 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[11/148] Diana Wudick (diana.wudick@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[12/148] Lauro Fialho Müller (contact@lauromueller.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[13/148] Katrin Rienäcker (katrin.rienaecker@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 29.75 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[14/148] Melanie Ebersberger (m.ebersberger@posteo.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[15/148] Claudia Schulze (claudiaschulze.md@posteo.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[16/148] Johannes Schubert (kontakt@sanktsprizz.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 88.06 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[17/148] Dr. Friedhelm Höfener (m.busch@haug-partner-unternehmensgruppe.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[18/148] Leander Walk (walk@bildungsdienstleistungen.eu)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[19/148] Robert Gerbermann (buntebutze@robert-gerbermann.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[20/148] Pauline Lendrich (tabycoe@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 89.25 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[21/148] Rick Belger (rick.belger@googlemail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 52.36 EUR
+  ✅ Buchungen: 2
+  ✅ Kontakt erstellt mit allen Daten
+
+[22/148] Fabian Pohl (fabian.pohl@examunity.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 44.63 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[23/148] Anna Werneke (anna.werneke@posteo.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[24/148] Lisa Gerbermann (l.gerbermann@posteo.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[25/148] Dennis Wöltje (dennis.woeltje@outlook.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[26/148] David Wolff (info@sinnfeld-audio.fm)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 272.51 EUR
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[27/148] Claudia Kermer / Christoph Melle (info@ggsa-ev.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 342.72 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[28/148] Hans-Henning (hanshenning.gabriel@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 38.08 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[29/148] Sissy (s.halboth@hl-coaching.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 105.91 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[30/148] Nicole Wuttig (nicole.wuttig@xtrade-gmbh.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[31/148] Franziska Ulrich (franziska.ulrich@brainandstorm.net)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 105.91 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[32/148] Sylke Pundt (pundt@expand-biz.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 20.23 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[33/148] Ronja Gerdes (ron.gerdes@outlook.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 67.83 EUR
+  ✅ Buchungen: 5
+  ✅ Kontakt erstellt mit allen Daten
+
+[34/148] Katharina Neufeld (neufeld_katharina@web.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[35/148] René Günther (rene.guenther@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[36/148] Andreas Ulrich (andreas.ulrich@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[37/148] Nicole Schiller (nicole@textvorsprung.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 20.23 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[38/148] Christopher (coworking@buntebutze.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.01 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[39/148] Julia Finke (hallo@hierbleiben-jobs.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 178.50 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[40/148] Dennis Henke (info@ossrox.org)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 45.22 EUR
+  ✅ Buchungen: 3
+  ✅ Kontakt erstellt mit allen Daten
+
+[41/148] Sandra Linn (sandra.linn@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[42/148] Maike Kühn (maike.kuehn@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[43/148] Silvia Schulze (schulze-familienhelferin@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.31 EUR
+  ✅ Buchungen: 3
+  ✅ Kontakt erstellt mit allen Daten
+
+[44/148] Jonas Meyer (kontakt@dh-biz.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[45/148] Sarah Grabert (sarahgrabert@googlemail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[46/148] Franziska Tietjen (franzi.chogan@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[47/148] Andreas Menzel (info@amenzel.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 23.80 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[48/148] BMS Corporate Solutions GmbH (lan-nhi.case@bms-cs.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 426.85 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[49/148] Jörn Brinckmann (joern.brinckmann@drweigert.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 89.25 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[50/148] ChristopherTagespass (post@christopherrohde.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.60 EUR
+  ✅ Buchungen: 1
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[51/148] Steffi Richter (steffi.richter83@gmx.net)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 29.75 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[52/148] Carmine Toriello (carmine.toriello@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[53/148] Enno Fricke (enno.fricke@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[54/148] Thomas Schattner (thomas.schattner@gigroup.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[55/148] Doreen Krüger (sarah.werner.31@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 35.70 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[56/148] ChristopherFixDesk (post@moschu.net)
+  ✅ Custom Fields: 4
+  🔄 Update existierenden Kontakt
+  ✅ Erfolgreich aktualisiert
+
+[57/148] Johanna Bertram (johanna.bertram@freiwilligenagentur-magdeburg.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 104.13 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[58/148] Benjamin Koch (benjamin.koch@nis-md.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[59/148] Tobias Wagner (tobias678wagner@outlook.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[60/148] Kristyn Lopez (kristyn.derosa@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[61/148] Timo Helms (umzug@kalopa.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[62/148] Vanessa Reiland (v.reiland@t-online.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[63/148] Thomas Hoffmann (thomas.hoffmann@kreuzwerker.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 298.34 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[64/148] Werner Software GmbH (pw@philipp-werner.info)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 116.62 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[65/148] Anna Sowern (anna_sowern@yahoo.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 45.22 EUR
+  ✅ Buchungen: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[66/148] Susanne Wiesner (swiesner@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[67/148] Martin Leuckert (martin@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 33.32 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[68/148] Andrin Schumann (post@andrinschumann.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[69/148] Heike Kugler (email@dr-kugler.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 37.49 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[70/148] Benjamin Peter (bp@ben-peter.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Buchungen: 8
+  ✅ Kontakt erstellt mit allen Daten
+
+[71/148] Elke Kürschner (elkekuer@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 20.23 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[72/148] Mario Krüger (krueger_m@freenet.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 95.20 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[73/148] Franziska Haußer (info@natuerlichmama-beratung.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 70.21 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[74/148] Hanna Viehöfer-Jürgens (hv@kommenundgehen.org)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 63.22 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[75/148] Philipp Horst (info@philipp-horst.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 275.19 EUR
+  ✅ Buchungen: 9
+  ✅ Kontakt erstellt mit allen Daten
+
+[76/148] Andreas Pfuhl (express25@mailbox.org)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 70.21 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[77/148] Mathias Heldt (mathias.heldt@nis-md.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 380.80 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[78/148] Laura-Soraya Schulz (laura.schulz@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[79/148] Tim Kirschner (einmathematiker@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 38.08 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[80/148] Sebastian Gotzner (sebastian.gotzner@nis-md.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[81/148] Sophie Fricke (sophie.fricke@t-online.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[82/148] Jana Hinze (jana.hinze1@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 105.91 EUR
+  ✅ Buchungen: 5
+  ✅ Kontakt erstellt mit allen Daten
+
+[83/148] Susann Bachmann (susann.bachmann@posteo.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 70.21 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[84/148] E-Star Trading GmbH (kseniia.kalenichenko@e-star.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 38.08 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[85/148] Larissa Wolniczak (larissa.wolniczak@team-nice.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 24.79 EUR
+  ✅ Buchungen: 3
+  ✅ Kontakt erstellt mit allen Daten
+
+[86/148] Danny Caleb Prashanth (danny.prashanth@sioux.eu)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Buchungen: 2
+  ✅ Kontakt erstellt mit allen Daten
+
+[87/148] Luisa Meier (meier@lindner-consult.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 89.25 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[88/148] Jaqueline Oppermann (jaqueline.mentoring@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[89/148] Christian Wolfang Kürschner (c-w-k@t-online.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[90/148] Inka Janssen (inkameike.janssen@med.uni-rostock.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[91/148] Natalia Melnik (natalia.a.melnik@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[92/148] Anna-Maria Nikolauschke (anna.1993@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[93/148] Tobias Bäthge (tobias@tablepress.org)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 116.62 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[94/148] Katharina Fabricius (info@montamusik.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 161.16 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[95/148] Patrick Back (pac@laidback.space)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[96/148] Karl McBride (flappppp@byom.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[97/148] Remote Sourcing GmbH (lorenz.surkemper@remotesourcing.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[98/148] Christoph Franke (christoph.franke@1k5-magdeburg.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 119.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[99/148] Timo Weitzmann (timo.weitzmann@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[100/148] Test Tarik (heiser-gang.9f@icloud.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[101/148] Oliver Lindner (grams@lindner-consult.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[102/148] Nino Kossien (n.kossien@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 89.25 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[103/148] Dana Binger (aktiv@magdedorf.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 89.25 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[104/148] Uncover Skincare BV (steffi@dr-jetskeultee.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 17.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[105/148] Jenny Hoffmann (office@lilaleute.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[106/148] @ndreas 🤖 (andreas@amenzel.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 71.40 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[107/148] Werner Czimek (w.czimek@web.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 107.10 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[108/148] Falcos GmbH (falk.lepie@falcos.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 571.58 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[109/148] Thomas Hummel (mbee2005@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 23.80 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[110/148] Tician Streifeneder (tician@quantab.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 204.68 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[111/148] Joshua Björn Lothar Georg Liedtke (joshlielie@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 88.06 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[112/148] Taras Tymchyshyn (taras.tymchyshyn@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[113/148] Nic (nicole.magstadt@outlook.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[114/148] Pascal Robert (pascal.robert@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[115/148] Sophie Mischur (mischursophie@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[116/148] Stefan Gadau (ingo.dingo@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 14.88 EUR
+  ✅ Buchungen: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[117/148] Kathrin Maurer (maurer@maurer-produktion.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[118/148] Ina Hempen (ina.hempen@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[119/148] Claudia Sieber (claudia.sieber@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[120/148] Christina (christina.baesecke@formundfrage.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 53.55 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[121/148] Paula Säring (paula.saering@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[122/148] Daniela Ptak (ptak.d@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 45.22 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[123/148] Tim Schmittmann (schmittmann@cancilico.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[124/148] René Lampe (r.lampe@dfv-lsa.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 156.19 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[125/148] Gunnar Thielebein (gunnar@thielebein.net)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 295.12 EUR
+  ✅ Buchungen: 51
+  ✅ Kontakt erstellt mit allen Daten
+
+[126/148] Yves Ackermann (yackermann@aks-consult.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 296.31 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[127/148] Anja Hellwig (a.hellwig@solar-materials.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 163.63 EUR
+  ✅ Buchungen: 2
+  ✅ Kontakt erstellt mit allen Daten
+
+[128/148] Grit Bümann (grit.buemann@wirkomplizn.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 96.69 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[129/148] Anne Wöltge (woeltge.anne@web.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 33.32 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[130/148] Michelle Heinze (michelleheinze@web.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[131/148] Matthias Klein (matthias.klein@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[132/148] Arne Mallmann (arne.mx9@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[133/148] Fabian Müller (mueller.fa@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 20.23 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[134/148] Christian Pfeiler (cpfeiler@aks-consult.de)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[135/148] OtherSite GmbH (accounting@othersite.io)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 70.21 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[136/148] Tarik (tarik.mrech@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[137/148] Mplus Germany GmbH (dennis.woeltje@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 22.61 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[138/148] Eric Eberhardt (info@jangada-group.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 14.88 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[139/148] Alexandra Bonk (bonk.alexandra@web.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 45.22 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[140/148] Dana Günther (willkommen@entwicklungtutgut.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 35.70 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[141/148] Muhammad Hashim Naveed (hnaveed@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[142/148] Natascha Dreesmann (natascha.dreesmann@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[143/148] Sascha Harant (sharant@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[144/148] Andreas Materne (a.friedrich@materne-training.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 119.00 EUR
+  ✅ Buchungen: 1
+  ✅ Kontakt erstellt mit allen Daten
+
+[145/148] Xandra Volkmann (xandra.volkmann@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 0.00 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+[146/148] Rakshitha Ramakrishna (rakshitha.ramakrishna@neotiv.com)
+  ✅ Custom Fields: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[147/148] Eduard Lind (eduard.lind@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 63.19 EUR
+  ✅ Buchungen: 4
+  ✅ Kontakt erstellt mit allen Daten
+
+[148/148] Star Rooms GmbH (baumgart-immobilien@web.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 70.21 EUR
+  ✅ Kontakt erstellt mit allen Daten
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SYNC ABGESCHLOSSEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Gesamt:      148
+Erfolgreich: 148 ✅
+  - Neu erstellt: 138
+  - Aktualisiert: 10
+Fehler:      0 ❌
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+

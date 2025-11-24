@@ -1,0 +1,54 @@
+[dotenv@17.2.3] injecting env (6) from .env -- tip: ⚙️  override existing env vars with { override: true }
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 INITIAL SYNC: Alle Cobot-Mitglieder → Chatwoot
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📥 Lade alle Mitglieder von Cobot...
+
+✅ 148 Mitglieder gefunden
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Starte Synchronisation...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[1/148] Sebastian Stoll (accounts@sebastianstoll.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: accounts@sebastianstoll.de
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[2/148] Dennis Wöltje (beschaffung@mplusgroup.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: beschaffung@mplusgroup.de
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[3/148] Lukas Frank (consulting@uebersetzungen-frank.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: consulting@uebersetzungen-frank.de
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[4/148] Maren Curth (marencurth@gmx.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: marencurth@gmx.de
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[5/148] Stefan Jäger (mail@stefan-jaeger.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: mail@stefan-jaeger.com
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[6/148] Marina Brandt (marina@freshpepper.de)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: marina@freshpepper.de
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
+
+[7/148] Steffi Ullrich (steffi.ullrich@gmail.com)
+  ✅ Custom Fields: 4
+  ✅ Letzte Rechnung: 1.19 EUR
+  ➕ Erstelle neuen Kontakt: steffi.ullrich@gmail.com
+  ❌ Fehler: Chatwoot Update Error: 404 - {"error":"Resource could not be found"}
