@@ -4,10 +4,10 @@ import fetch from 'node-fetch';
 dotenv.config();
 
 const COBOT_SUBDOMAIN = process.env.COBOT_SUBDOMAIN;
-const COBOT_API_TOKEN = process.env.COBOT_API_TOKEN;
-const CHATWOOT_URL = process.env.CHATWOOT_URL;
+const COBOT_API_TOKEN = process.env.COBOT_ACCESS_TOKEN;
+const CHATWOOT_URL = process.env.CHATWOOT_API_URL;
 const CHATWOOT_ACCOUNT_ID = process.env.CHATWOOT_ACCOUNT_ID;
-const CHATWOOT_API_KEY = process.env.CHATWOOT_API_KEY;
+const CHATWOOT_API_KEY = process.env.CHATWOOT_API_TOKEN;
 
 const MEMBER_ID = process.argv[2];
 
@@ -207,6 +207,7 @@ async function syncMember() {
         // 6. Alle Daten an Chatwoot senden
         console.log('\n📤 Sende Daten an Chatwoot...');
         await updateChatwootContact(contact.id, {
+            name: member.name || member.email,
             custom_attributes: {
                 cobot_id: member.id,
                 cobot_status: member.canceled_to ? `Gekündigt zum ${member.canceled_to}` : 'Aktiv',

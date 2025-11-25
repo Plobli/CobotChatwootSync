@@ -1,46 +1,33 @@
-# Cobot-Chatwoot Sync
+# Chatwoot Cobot Sync
 
-Synchronisiert Mitgliederdaten von Cobot mit Chatwoot und bietet ein Dashboard zur Anzeige der Daten direkt in Chatwoot.
+Synchronisiert Mitgliederdaten von Cobot mit Chatwoot Custom Attributes.
 
 ## Features
 
-- **Webhook Integration**: Empfängt Events von Cobot (Rechnungen, Buchungen, Kündigungen)
+- **Webhook Integration**: Empfängt Events von Cobot bei Mitgliederänderungen
 - **Automatische Synchronisation**: Aktualisiert Kontaktdaten in Chatwoot bei Änderungen
-- **Dashboard App**: Zeigt Cobot-Daten direkt in der Chatwoot Sidebar
-- **Initial Sync**: Script zum einmaligen Sync aller bestehenden Mitglieder
+- **Mitgliederdaten-Sync**: Überträgt Cobot-Mitgliederdaten zu Chatwoot Custom Attributes
 
 ## Komponenten
 
-### 1. Webhook Server (`server.js`)
+### Webhook Server (`server.js`)
 Läuft auf Port 3002 und empfängt Webhooks von Cobot:
-- `created_invoice` - Neue Rechnungen
-- `deleted_membership` - Gekündigte Mitgliedschaften
-- `created_booking` / `deleted_booking` - Buchungen
-- `updated_custom_field` - Custom Field Änderungen
+- `created_membership` - Neue Mitgliedschaften
+- `updated_membership_details` - Aktualisierte Mitgliederdaten
 
-### 2. Dashboard App (`dashboard-app/`)
-Läuft auf Port 3003 und zeigt Cobot-Daten in Chatwoot:
-- Mitgliedsstatus und Tarif
-- Rechnungsinformationen
-- Buchungshistorie
-- Custom Fields (24h Zugang, Nachsendeadresse, etc.)
-
-### 3. Sync Scripts
-- `sync-all-members.js` - Initial Sync aller Mitglieder
-- `sync-member.js` - Einzelner Mitglieder-Sync
+**Hinweis:** Das Dashboard zur Anzeige von Cobot-Daten in Chatwoot läuft als separates Projekt unter `/opt/ChatwootCobotDashboard`
 
 ## Installation
 
 1. **Repository klonen:**
 ```bash
-git clone <repository-url>
-cd cobot-chatwoot-sync
+git clone https://github.com/Plobli/CobotChatwootSync.git
+cd CobotChatwootSync
 ```
 
 2. **Dependencies installieren:**
 ```bash
 npm install
-cd dashboard-app && npm install
 ```
 
 3. **Umgebungsvariablen konfigurieren:**
@@ -50,16 +37,12 @@ nano .env
 ```
 
 Erforderliche Variablen:
-- `COBOT_API_TOKEN` - Cobot API Token
-- `COBOT_SUBDOMAIN` - Cobot Subdomain (z.B. mitglieder.lieblingsarbeitsort.de)
+- `COBOT_ACCESS_TOKEN` - Cobot API Access Token
+- `COBOT_SUBDOMAIN` - Cobot Subdomain (z.B. mitglieder-lieblingsarbeitsort)
 - `CHATWOOT_API_URL` - Chatwoot URL (z.B. https://hilfe.lieblingsarbeitsort.de)
 - `CHATWOOT_API_TOKEN` - Chatwoot API Token
 - `CHATWOOT_ACCOUNT_ID` - Chatwoot Account ID (meist 1)
-
-4. **Custom Attributes in Chatwoot erstellen:**
-```bash
-node create-attributes.js
-```
+- `PORT` - Server Port (3002)
 
 ## Deployment
 
@@ -67,12 +50,8 @@ node create-attributes.js
 
 ```bash
 # Webhook Server starten
-cd /opt/cobot-chatwoot-sync
+cd /opt/ChatwootCobotSync
 pm2 start server.js --name webhook-server
-
-# Dashboard App starten
-cd /opt/cobot-chatwoot-sync/dashboard-app
-pm2 start server.js --name dashboard-app
 
 # Konfiguration speichern
 pm2 save
@@ -88,53 +67,20 @@ pm2 startup
 hilfe-webhook.lieblingsarbeitsort.de {
     reverse_proxy localhost:3002
 }
-
-# Dashboard unter Subdomain-Path
-hilfe.lieblingsarbeitsort.de {
-    route /dashboard* {
-        uri strip_prefix /dashboard
-        header Access-Control-Allow-Origin *
-        header Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
-        reverse_proxy localhost:3003
-    }
-    reverse_proxy localhost:3000
-}
 ```
 
 ## Webhook Konfiguration in Cobot
 
-Webhook URL: `https://hilfe-webhook.lieblingsarbeitsort.de/webhook`
-
-Aktivierte Events:
-- `created_invoice`
-- `deleted_membership`
-- `created_booking`
-- `deleted_booking`
-- `updated_custom_field`
-
-## Dashboard App Einrichtung in Chatwoot
-
-1. Gehe zu **Einstellungen → Applications → Dashboard Apps**
-2. Klicke auf **Add a new dashboard app**
-3. Konfiguration:
-   - **Title**: Cobot Mitgliederdaten
-   - **URL**: `https://hilfe.lieblingsarbeitsort.de/dashboard/`
-   - **Height**: 600
-
-## Initial Sync
-
-Um alle bestehenden Mitglieder zu synchronisieren:
-
-```bash
-cd /opt/cobot-chatwoot-sync
-node sync-all-members.js
-```
-
-**Hinweis:** Der Sync kann bei vielen Mitgliedern länger dauern (2 Sekunden Delay pro Mitglied zur Vermeidung von Rate Limits).
+1. Gehe zu https://mitglieder.lieblingsarbeitsort.de/admin/webhooks
+2. Erstelle einen neuen Webhook:
+   - **URL**: `https://hilfe-webhook.lieblingsarbeitsort.de/webhook`
+   - **Events**: 
+     - `created_membership`
+     - `updated_membership_details`
 
 ## Synchronisierte Daten
 
-Für jeden Kontakt werden folgende Custom Attributes erstellt:
+Für jeden Kontakt werden folgende Custom Attributes in Chatwoot erstellt/aktualisiert:
 
 - `cobot_id` - Cobot Membership ID
 - `cobot_status` - Status (Aktiv/Gekündigt)
@@ -143,36 +89,29 @@ Für jeden Kontakt werden folgende Custom Attributes erstellt:
 - `cobot_phone` - Telefonnummer
 - `cobot_adresse` - Adresse
 - `cobot_profile_url` - Link zum Cobot-Profil
-- `cobot_last_invoice_date` - Letzte Rechnung
-- `cobot_last_invoice_amount` - Rechnungsbetrag
-- `cobot_last_invoice_status` - Rechnungsstatus
-- `cobot_next_invoice_date` - Nächste Rechnung
-- `cobot_last_booking_date` - Letzte Buchung
-- `cobot_last_booking_from` / `_to` - Buchungszeitraum
-- `cobot_last_booking_resource` - Gebuchte Ressource
-- `cobot_booking_history` - Historie der letzten Buchungen
-- `cobot_custom_fields` - Cobot Custom Fields
-- `cobot_cf_*` - Einzelne Custom Fields
+- Weitere Cobot-Daten je nach Konfiguration
 
 ## Troubleshooting
 
-### Dashboard lädt nicht
-```bash
-pm2 logs dashboard-app
-pm2 restart dashboard-app
-```
-
 ### Webhook funktioniert nicht
 ```bash
+# Prüfe Logs
 pm2 logs webhook-server
-# Prüfe ob Port 3002 erreichbar ist
+
+# Prüfe ob Server läuft
+pm2 status
+
+# Teste Webhook lokal
 curl http://localhost:3002/
+
+# Starte Service neu
+pm2 restart webhook-server
 ```
 
-### Rate Limiting
-Cobot API hat ein 4-Monats-Limit für Buchungsabfragen. Der Sync verwendet:
-- 3 Monate zurück
-- 1 Monat voraus
+### Kontakte werden nicht erstellt
+- Prüfe ob Chatwoot API Token korrekt ist
+- Prüfe ob Account ID stimmt (meist 1)
+- Prüfe Logs: `pm2 logs webhook-server --lines 100`
 
 ## Lizenz
 
