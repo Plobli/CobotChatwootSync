@@ -175,12 +175,99 @@ async function handleMembershipEvent(membershipUrl) {
     });
 }
 
-// ===== WEBHOOK ENDPOINT =====
+// ===== CHATWOOT -> COBOT SYNC =====
 
+// Cobot Custom Field IDs
+const COBOT_CUSTOM_FIELD_IDS = {
+    'cobot_cf_zugang_24_stunden': 'b799594101de60d2c5904a6a72fd580a',
+    'cobot_cf_nachsendeadresse': '3ac66a448db77c40f5bba11379aa5cdd',
+    'cobot_cf_firmenbezeichnung_briefkasten': '01e9f41eac032de45ee760dd197d12f7',
+    'cobot_cf_fix_desk': 'aeb42929e950a92a4754f3313e44dfba'
+};
+
+async function syncCustomFieldsToCobot(cobotId, customAttributes) {
+    console.log(`📤 Sync Custom Fields zu Cobot für Member: ${cobotId}`);
+    
+    const cobotFields = [];
+    
+    // Prüfe welche Chatwoot-Felder zu Cobot synchronisiert werden sollen
+    if (customAttributes.cobot_cf_zugang_24_stunden !== undefined) {
+        cobotFields.push({
+            id: COBOT_CUSTOM_FIELD_IDS['cobot_cf_zugang_24_stunden'],
+            value: customAttributes.cobot_cf_zugang_24_stunden || ''
+        });
+    }
+    
+    if (customAttributes.cobot_cf_nachsendeadresse !== undefined) {
+        cobotFields.push({
+            id: COBOT_CUSTOM_FIELD_IDS['cobot_cf_nachsendeadresse'],
+            value: customAttributes.cobot_cf_nachsendeadresse || ''
+        });
+    }
+    
+    if (customAttributes.cobot_cf_firmenbezeichnung_briefkasten !== undefined) {
+        cobotFields.push({
+            id: COBOT_CUSTOM_FIELD_IDS['cobot_cf_firmenbezeichnung_briefkasten'],
+            value: customAttributes.cobot_cf_firmenbezeichnung_briefkasten || ''
+        });
+    }
+    
+    if (customAttributes.cobot_cf_fix_desk !== undefined) {
+        cobotFields.push({
+            id: COBOT_CUSTOM_FIELD_IDS['cobot_cf_fix_desk'],
+            value: customAttributes.cobot_cf_fix_desk || ''
+        });
+    }
+    
+    if (cobotFields.length === 0) {
+        console.log('ℹ️  Keine Custom Fields zum Synchronisieren');
+        return;
+    }
+    
+    console.log('📤 Sende Custom Fields zu Cobot:', cobotFields);
+    
+    const response = await fetch(
+        `https://${COBOT_SUBDOMAIN}/api/memberships/${cobotId}/custom_fields`,
+        {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${COBOT_API_TOKEN}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(cobotFields)
+        }
+    );
+    
+    if (!response.ok) {
+        const error = await response.text();
+        throw new Error(`Cobot Custom Fields Update Error: ${response.status} - ${error}`);
+    }
+    
+    console.log('✅ Custom Fields erfolgreich zu Cobot synchronisiert');
+}
+
+async function handleChatwootContactUpdate(contact) {
+    console.log(`📝 Chatwoot Contact Update: ${contact.email || contact.id}`);
+    
+    const customAttributes = contact.custom_attributes || {};
+    const cobotId = customAttributes.cobot_id;
+    
+    if (!cobotId) {
+        console.log('ℹ️  Kein cobot_id - Contact nicht mit Cobot verknüpft');
+        return;
+    }
+    
+    // Sync Custom Fields zu Cobot
+    await syncCustomFieldsToCobot(cobotId, customAttributes);
+}
+
+// ===== WEBHOOK ENDPOINTS =====
+
+// Cobot Webhook (bestehend)
 app.post('/webhook', async (req, res) => {
     try {
         console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-        console.log('📥 Webhook received');
+        console.log('📥 Cobot Webhook received');
         const { url } = req.body;
         
         if (!url) {
@@ -205,11 +292,38 @@ app.post('/webhook', async (req, res) => {
     }
 });
 
+// Chatwoot Webhook (neu)
+app.post('/chatwoot-webhook', async (req, res) => {
+    try {
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('📥 Chatwoot Webhook received');
+        console.log('Event:', req.body.event);
+        
+        const { event, contact } = req.body;
+        
+        // Nur Contact Update Events behandeln
+        if (event === 'contact_updated' && contact) {
+            await handleChatwootContactUpdate(contact);
+            console.log('✅ Chatwoot Webhook erfolgreich verarbeitet\n');
+        } else {
+            console.log(`ℹ️  Event "${event}" ignoriert`);
+        }
+        
+        res.status(200).send('OK');
+        
+    } catch (error) {
+        console.error('❌ Fehler:', error.message);
+        console.error('Stack:', error.stack);
+        res.status(500).send('Error');
+    }
+});
+
 // ===== SERVER START =====
 
 app.listen(PORT, () => {
     console.log('═══════════════════════════════════════════════════════════');
-    console.log(`🚀 Cobot Membership Sync läuft auf Port ${PORT}`);
-    console.log(`📍 Webhook URL: https://hilfe-webhook.lieblingsarbeitsort.de/webhook`);
+    console.log(`🚀 Cobot-Chatwoot Sync läuft auf Port ${PORT}`);
+    console.log(`📍 Cobot Webhook: https://hilfe-webhook.lieblingsarbeitsort.de/webhook`);
+    console.log(`📍 Chatwoot Webhook: https://hilfe-webhook.lieblingsarbeitsort.de/chatwoot-webhook`);
     console.log('═══════════════════════════════════════════════════════════');
 });
