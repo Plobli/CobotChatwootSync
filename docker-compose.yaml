@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  cobot-sync:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:3002:3002'
+    env_file:
+      - .env
+    networks:
+      - web
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+
+networks:
+  web:
+    external: true
